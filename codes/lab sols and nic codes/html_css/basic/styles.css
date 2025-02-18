@@ -1,0 +1,25 @@
+header {
+    text-align:center;
+    background-color: black;
+}
+
+#bad_jokes{
+    text-align:center;
+    color:white;
+    background-color: black;
+}
+
+body{
+    text-align:center;
+    color:black;
+}
+nav {
+    color:white;
+    background-color: grey;
+    text-align: left;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}

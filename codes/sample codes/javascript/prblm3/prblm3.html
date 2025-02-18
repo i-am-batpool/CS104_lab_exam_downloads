@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Counting Stairs</title>
+</head>
+<body>
+    <h1>Let's Help Erin!</h1>
+    <p>How many ways are there for Stanley to get up the stairs?</p>
+    <label for="inputN">Number of stairs: </label>
+    <input type="number" id="inputN" min="1" step="1" value="1">
+    <button type="button" onclick="oncall()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        // TODO: Write your code here.
+        function calc(n){
+          if (n==1){
+            return 1;
+          }
+          if (n==0){
+            return 1;
+          }
+          return (calc(n-1)+calc(n-2));
+        }
+        function oncall(){
+            let n = document.getElementById("inputN").value;
+            document.getElementById("result").innerText=calc(n);
+        }
+    </script>
+</body>
+</html>
